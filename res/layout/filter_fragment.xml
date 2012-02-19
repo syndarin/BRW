@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#FF000000" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Индивидуальная подборка"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <!-- LEFT PART OF FILTER FRAGMENT -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Тип мебели:" />
+
+            <EditText
+                android:id="@+id/filter_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="введите тип..."
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Варианты цветов:" />
+            
+            <CheckBox 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/filter_color_1"
+                android:text="Венге"/>
+            <CheckBox 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/filter_color_2"
+                android:text="Грецкий орех"/>
+            <CheckBox 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/filter_color_3"
+                android:text="Дуб SUTTER"/>
+            <CheckBox 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/filter_color_4"
+                android:text="Итальянская вишня"/>
+            <CheckBox 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/filter_color_5"
+                android:text="Черешня ORLAND"/>
+            <CheckBox 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/filter_color_6"
+                android:text="Черешня/Ваниль"/>
+        </LinearLayout>
+
+        <!-- RIGHT PART -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Цена:" />
+
+            <!-- PRICE BLOCK -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="от" 
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/filter_price_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="до"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+                <EditText
+                    android:id="@+id/filter_price_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="грн."
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Характеристика:" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Длина, см" />
+
+                    <EditText
+                        android:id="@+id/filter_length"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true" />
+                </LinearLayout> <!-- CLOSING LENGTH PARAM -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Ширина, см" />
+
+                    <EditText
+                        android:id="@+id/filter_width"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true" />
+                </LinearLayout> <!-- CLOSING WIDTH PARAM -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Высота, см" />
+
+                    <EditText
+                        android:id="@+id/filter_height"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true" />
+                </LinearLayout> <!-- CLOSING HEIGHT PARAM -->
+
+            </LinearLayout> <!-- CLOSING DIMENSIONAL PARAM -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Допуск, %" />
+                
+                <Button 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_reduce_error"
+                    android:text="-"/>
+
+                <EditText
+                    android:id="@+id/filter_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+                
+                <Button 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_increase_error"
+                    android:text="+"/>
+            </LinearLayout><!-- CLOSING ERROR -->
+            
+            <CheckBox 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/filter_is_sale"
+                android:text="Акционные товары"/>
+            
+            <CheckBox 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/filter_is_individual"
+                android:text="Индивидуальные предложения"/>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <Button 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Применить фильтр"
+                    android:textColor="#FF000000"
+                    android:id="@+id/button_apply_filter"
+                    android:background="@drawable/back"/>
+                
+                <Button 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Сбросить фильтр"
+                    android:textColor="#FF000000"
+                    android:id="@+id/button_skip_filter"
+                    android:background="@drawable/back"/>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

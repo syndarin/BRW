@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/detailed_model_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp"
+        android:text="Детальное описание модели"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="15dp"
+            android:layout_weight="50"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/detailed_model_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@drawable/august" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/button_add_backet"
+                    android:src="@drawable/basket_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FFFFFFFF"/>
+
+                <ImageButton
+                    android:id="@+id/button_add_favourite"
+                    android:src="@drawable/fav_pass_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="50dp"
+                    android:background="#FFFFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Описание:"
+                android:textColor="#FF000000"
+                android:textSize="24sp" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" >
+
+                <TableRow >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="коллекция:"
+                        android:textColor="#FF000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/detailed_model_collection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="ATRIUM"
+                        android:textColor="#FF000000"
+                        android:textSize="24sp" />
+                </TableRow>
+
+                <TableRow >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="описание:"
+                        android:textColor="#FF000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/detailed_model_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="шкаф для обуви"
+                        android:textColor="#FF000000"
+                        android:textSize="24sp" />
+                </TableRow>
+
+                <TableRow >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="артикул:"
+                        android:textColor="#FF000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/detailed_model_articul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="KOZ-1S"
+                        android:textColor="#FF000000"
+                        android:textSize="24sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Размеры:"
+                android:textColor="#FF000000"
+                android:textSize="24sp" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" >
+
+                <TableRow >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="высота:"
+                        android:textColor="#FF000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/detailed_model_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="83"
+                        android:textColor="#FF000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="см."
+                        android:textColor="#FF000000"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="5dp" />
+                </TableRow>
+
+                <TableRow >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ширина:"
+                        android:textColor="#FF000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/detailed_model_width"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="123"
+                        android:textColor="#FF000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="см."
+                        android:textColor="#FF000000"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="5dp" />
+                </TableRow>
+
+                <TableRow >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="длина:"
+                        android:textColor="#FF000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/detailed_model_length"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="45"
+                        android:textColor="#FF000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="см."
+                        android:textColor="#FF000000"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="5dp" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Цвет:"
+                android:textColor="#FF000000"
+                android:textSize="24sp" />
+            
+            	<TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" >
+
+                <TableRow >
+
+                    <TextView
+                        android:id="@+id/detailed_model_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="грецкий орех"
+                        android:textColor="#FF000000"
+                        android:textSize="24sp" />
+
+                </TableRow>
+                
+            </TableLayout>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Цена"
+                        android:textColor="#FF000000"
+                        android:textSize="28sp" />
+                
+                <TextView
+                        android:id="@+id/detailed_model_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="2399"
+                        android:textColor="#FFFF0000"
+                        android:textStyle="bold"
+                        android:textSize="28sp" />
+                
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="грн."
+                        android:textColor="#FF000000"
+                        android:textSize="28sp" />
+                
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

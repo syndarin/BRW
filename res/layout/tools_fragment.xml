@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TOOL PANEL WITH BUTTONS -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:background="#FFFFFFFF"
+    android:padding="5dip"
+    android:gravity="center">
+    
+    <ImageButton 
+        android:src="@drawable/cat_pass"
+        android:id="@+id/button_catalogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <ImageButton 
+        android:src="@drawable/filter_off_pass"
+        android:id="@+id/button_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:layout_marginLeft="5dp"/>
+    <ImageButton 
+        android:src="@drawable/filter_on_pass"
+        android:id="@+id/button_filter_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:layout_marginRight="5dp"/>
+    <ImageButton 
+        android:src="@drawable/fav_pass"
+        android:id="@+id/button_favourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <ImageButton 
+        android:src="@drawable/backet_pass"
+        android:id="@+id/button_backet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <ImageButton 
+        android:src="@drawable/enter"
+        android:id="@+id/button_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+</LinearLayout>
